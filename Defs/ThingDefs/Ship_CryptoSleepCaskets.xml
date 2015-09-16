@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <!-- Cryptosleep casket (normal) -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Ship_CryptosleepCasket</defName>
+    <label>ship cryptosleep casket</label>
+    <thingClass>Fluffy.Building_CryptosleepCasket</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <researchPrerequisite>ShipCryptosleep</researchPrerequisite>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A cryptosleep casket hardened against the dangers of space. Capable of maintaining a person in cryptosleep for centuries in a space environment and surviving atmospheric re-entry.</description>
+    <size>(1,2)</size>
+    <designationCategory>Ship</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(1,0,0)</interactionCellOffset>
+    <comps>
+      <li>
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li>
+        <compClass>CompShipPart</compClass>
+      </li>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+      <li Class="Fluffy.CompPropertiesAnimalCrypto">
+        <compClass>Fluffy.CompAnimalCrypto</compClass>
+        <maxSizeAllowance>1.5</maxSizeAllowance>
+      </li>     
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_HeadOnShipBeam</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <isPlayerEjectable>true</isPlayerEjectable>
+    </building>
+    <costList>
+      <Steel>500</Steel>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>
+
+  <!-- Cryptosleep casket (small) -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Ship_CryptosleepCasket_Small</defName>
+    <label>small ship cryptosleep casket</label>
+    <thingClass>Fluffy.Building_CryptosleepCasket</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <researchPrerequisite>ShipCryptosleep</researchPrerequisite>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A cryptosleep casket hardened against the dangers of space. Capable of maintaining a person in cryptosleep for centuries in a space environment and surviving atmospheric re-entry.</description>
+    <size>(1,1)</size>
+    <designationCategory>Ship</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <comps>
+      <li>
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li>
+        <compClass>CompShipPart</compClass>
+      </li>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+      <li Class="Fluffy.CompPropertiesAnimalCrypto">
+        <compClass>Fluffy.CompAnimalCrypto</compClass>
+        <maxSizeAllowance>.5</maxSizeAllowance>
+      </li>   
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_HeadOnShipBeam</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <isPlayerEjectable>true</isPlayerEjectable>
+    </building>
+    <costList>
+      <Steel>250</Steel>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>
+
+  <!-- Cryptosleep casket (LARGE) -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Ship_CryptosleepCasket_Large</defName>
+    <label>large ship cryptosleep casket</label>
+    <thingClass>Fluffy.Building_CryptosleepCasket</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <researchPrerequisite>ShipCryptosleep</researchPrerequisite>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A cryptosleep casket hardened against the dangers of space. Capable of maintaining a person in cryptosleep for centuries in a space environment and surviving atmospheric re-entry.</description>
+    <size>(2,2)</size>
+    <designationCategory>Ship</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(2,0,0)</interactionCellOffset>
+    <comps>
+      <li>
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li>
+        <compClass>CompShipPart</compClass>
+      </li>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+      <li Class="Fluffy.CompPropertiesAnimalCrypto">
+        <compClass>Fluffy.CompAnimalCrypto</compClass>
+        <maxSizeAllowance>15</maxSizeAllowance>
+      </li>  
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_HeadOnShipBeam</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <isPlayerEjectable>true</isPlayerEjectable>
+    </building>
+    <costList>
+      <Steel>750</Steel>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>
+</GameData>

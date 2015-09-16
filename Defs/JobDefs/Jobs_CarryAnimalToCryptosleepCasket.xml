@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>Fluffy_PutInCrypto</defName>
+    <driverClass>Fluffy.JobDriver_CarryAnimalToCryptosleepCasket</driverClass>
+    <reportString>Carrying TargetA to cryptosleep casket.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+</Defs>

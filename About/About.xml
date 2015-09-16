@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>No Colonist Left Behind!</name>
+	<author>Fluffy (l2032)</author>
+	<url></url>
+	<targetVersion>Alpha 12d</targetVersion>
+	<description>
+Allows assigning colonists' animals to be designated and put into cryptosleep caskets, so you don't have to leave your trusty companions behind.
+
+  - Adds designator for mass-putting animals in caskets (found in Orders, requires CCL to be loaded)
+  - Adds a Large Cryptosleep Casket, so you can take pet Thrumbos with you
+  - Adds a Small Cryptosleep Casket, kittens really don't need that much space
+  - Adds a button to cryptosleep caskets to manually assign animals to specific caskets
+	</description>
+</ModMetaData>

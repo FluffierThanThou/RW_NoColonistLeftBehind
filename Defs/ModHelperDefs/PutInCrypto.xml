@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ModHelperDef>
+		<defName>Fluffy_NoColonistLeftBehind</defName>
+		<ModName>No Colonist Left Behind!</ModName>
+		<version>0.12.1.0</version>
+
+		<Designators>
+			<li>
+				<designatorClass>Fluffy.Designator_PutInCrypto</designatorClass>
+				<designationCategoryDef>Orders</designationCategoryDef>
+				<designatorNextTo>Designator_Hunt</designatorNextTo>
+			</li>
+		</Designators>
+
+	</ModHelperDef>
+
+</Defs>

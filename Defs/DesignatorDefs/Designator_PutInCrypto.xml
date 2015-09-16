@@ -1,0 +1,11 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <DesignatorDef>
+        <defName>Fluffy_PutInCrypto</defName>
+        <designatorClass>Fluffy.Designator_PutInCrypto</designatorClass>
+        <designationCategory>Structure</designationCategory>
+    </DesignatorDef>
+
+</Defs>
