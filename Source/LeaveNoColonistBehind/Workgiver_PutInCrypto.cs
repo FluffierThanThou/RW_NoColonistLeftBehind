@@ -45,6 +45,7 @@ namespace Fluffy
         public override bool HasJobOnThing(Pawn pawn, Thing t)
         {
             Pawn pawn2 = t as Pawn;
+            if (pawn2 == null) return false;
             bool casket = Building_CryptosleepCasket.FindCryptosleepCasketFor(pawn2, pawn) != null;
             return pawn2 != null && casket && pawn2.RaceProps.Animal && pawn2.CasualInterruptibleNow() && pawn.CanReserveAndReach(pawn2, PathEndMode.Touch, Danger.Deadly);
         }
